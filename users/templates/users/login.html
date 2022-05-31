@@ -4,10 +4,10 @@
     {% if message %}
         <div>{{ message }}</div>
     {% endif %}
-    <form actoion="{% url 'login' %}" method="post">
+    <form action="{% url 'log_in' %}" method="post">
         {% csrf_token %}
         <input type="text" name="username" placeholder="Username">
-        <input type="password" name="password" placeholder="Password">
+        <input type="password" name="password" placeholder="password">
         <input type="submit" value="Login">
     </form>
 {% endblock %}
